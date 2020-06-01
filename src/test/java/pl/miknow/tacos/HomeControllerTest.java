@@ -20,7 +20,10 @@ import org.springframework.test.web.servlet.MockMvc;
 //@RunWith(SpringRunner.class) // JUnit4
 @ExtendWith(SpringExtension.class) // JUnit5
 
-@WebMvcTest(HomeController.class)
+//@WebMvcTest(HomeController.class) // Po utworzeniu klasy konfiguracyjnej WebConfig, 
+//									klasa HomeController jest już niepotrzebna (można ją usunąć)
+@WebMvcTest
+
 public class HomeControllerTest {
 	@Autowired
 	private MockMvc mockMvc;

@@ -2,9 +2,18 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 	<title>Aplikacja Taco Cloud</title>
+	<link rel="stylesheet" th:href="@{/styles.css}"/>
 </head>
 <body>
-	<h1>Witaj w...</h1>
-	<img th:src="@{/images/TacoCloud.png}"/>
+	<main>
+		<article>
+			<div class="container">
+				<header>
+					<h1>Witaj w...</h1>
+					<a href="design"><img th:src="@{/images/TacoCloud.png}"/></a>
+				</header>
+			</div>
+		</article>
+	</main>
 </body>
 </html>

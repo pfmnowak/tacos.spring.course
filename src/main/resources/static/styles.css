@@ -1,0 +1,25 @@
+body {
+	background-color: #aa6666;
+}
+
+.container {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.grid {
+	text-align: left;
+}
+
+.ingredient-group {
+	float: left;
+	margin-left: 33px;
+	margin-right: 33px;
+	width: 200px;
+}
+
+.sender {
+	margin-top: 40px;
+}
