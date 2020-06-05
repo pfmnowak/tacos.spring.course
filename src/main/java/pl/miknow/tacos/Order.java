@@ -1,6 +1,8 @@
 package pl.miknow.tacos;
 
-import java.sql.Date;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotBlank;
@@ -31,7 +33,10 @@ public class Order {
 	@Digits(integer=3, fraction = 0, message = "Nieprawidłowy kod CVV.")
 	private String ccCVV;
 	
-	public void addDesign(Taco taco) {
-			
-		}
+	private List<Taco> tacos = new ArrayList<>();
+	
+	public void addDesign(Taco design) {
+		this.tacos.add(design);
+	}
+
 }
