@@ -35,7 +35,7 @@ public class DesignTacoController {
 		this.designRepo = designRepo;
 	}
 	
-//	Rozdział 3 (JDBC)
+//	Rozdział 3 (JDBC/JPA)
 	@GetMapping
 	public String showDesignForm(Model model) {
 		List<Ingredient> ingredients = new ArrayList<>();
@@ -47,31 +47,6 @@ public class DesignTacoController {
 		model.addAttribute("design", new Taco());
 		return "design";
 	}
-	
-//	Rozdział 2
-//	public String showDesignForm(Model model) {
-//		List<Ingredient> ingredients = Arrays.asList(
-//				new Ingredient("FLTO", "przenna", Type.WRAP),
-//				new Ingredient("COTO", "kukurydziana", Type.WRAP),
-//				new Ingredient("GRBF", "mielona wołowina", Type.PROTEIN),
-//				new Ingredient("CARN", "kawałki mięsa", Type.PROTEIN),
-//				new Ingredient("TMTO", "pomidory pokrojone w kostkę", Type.VEGGIES),
-//				new Ingredient("LETC", "sałata", Type.VEGGIES),
-//				new Ingredient("CHED", "cheddar", Type.CHEESE),
-//				new Ingredient("JACK", "Monterey Jack", Type.CHEESE),
-//				new Ingredient("SLSA", "pikantny sos pomidorowy", Type.SAUCE),
-//				new Ingredient("SRCR", "śmietana", Type.SAUCE)
-//				);
-//		Type[] types = Ingredient.Type.values();
-//		for (Type type : types) {
-//			model.addAttribute(type.toString().toLowerCase(), filterByType(ingredients, type));
-//		}
-//		model.addAttribute("design", new Taco());
-//		return "design";
-//	}
-	
-	
-//	Rozdział 3 (JDBC)
 	
 	@ModelAttribute(name="order")
 	public Order order() {

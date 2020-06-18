@@ -65,12 +65,11 @@ xmlns:th="http://www.thymeleaf.org">
 						<div class="sender">
 							<h3>Nadaj nazwę przygotowanemu taco:</h3>
 							<input type="text" th:field="*{name}"/>
-							<!--
-							z githuba ale nwm
+							
 							<span class="validationError"
 				            th:if="${#fields.hasErrors('name')}" 
 				            th:errors="*{name}">Name Error</span>
-							-->
+							
 							<br>
 							<button>Wyślij swoje zamówienie</button>
 						</div>
