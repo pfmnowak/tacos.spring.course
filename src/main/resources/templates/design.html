@@ -14,9 +14,14 @@ xmlns:th="http://www.thymeleaf.org">
 					<a href="/"><img th:src="@{/images/TacoCloud.png}"/></a>
 				</header>
 				<article>
-					<form method="POST" th:object="${design}">
-						<div class="grid">
+					<form method="POST" th:object="${taco}">
 						
+						<span class="validationError" 
+							th:if="${#fields.hasErrors('ingredients')}" 
+							th:errors="*{ingredients}">Ingredient Error</span>
+						
+						<div class="grid">
+							
 							<div class="ingredient-group" id="wraps">
 								<h3>Wybierz rodzaj mąki:</h3>
 								<div th:each="ingredient:${wrap}">
@@ -65,12 +70,11 @@ xmlns:th="http://www.thymeleaf.org">
 						<div class="sender">
 							<h3>Nadaj nazwę przygotowanemu taco:</h3>
 							<input type="text" th:field="*{name}"/>
-							<!--
-							z githuba ale nwm
+							
 							<span class="validationError"
 				            th:if="${#fields.hasErrors('name')}" 
 				            th:errors="*{name}">Name Error</span>
-							-->
+
 							<br>
 							<button>Wyślij swoje zamówienie</button>
 						</div>

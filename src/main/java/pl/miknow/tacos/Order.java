@@ -17,15 +17,15 @@ public class Order {
 	private Long id;
 	private Date placedAt;
 	@NotBlank(message="Podanie imienia i nazwiska jest obowiązkowe.")
-	private String name;
+	private String deliveryName;
 	@NotBlank(message="Podanie ulicy jest obowiązkowe.")
-	private String street;
+	private String deliveryStreet;
 	@NotBlank(message="Podanie miejscowości jest obowiązkowe.")
-	private String city;
+	private String deliveryCity;
 	@NotBlank(message="Podanie województwa jest obowiązkowe.")
-	private String state;
+	private String deliveryState;
 	@NotBlank(message="Podanie kodu pocztowego jest obowiązkowe.")
-	private String zip;
+	private String deliveryZip;
 	@CreditCardNumber(message="To nie jest prawidłowy numer karty kredytowej")
 	private String ccNumber;
 	@Pattern(regexp = "^(0[1-9]|1[0-2])([\\/])([1-9][0-9])$", message = "Wartość musi być w formacie MM/RR.")
