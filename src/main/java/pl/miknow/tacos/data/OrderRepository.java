@@ -5,7 +5,7 @@ import java.util.List;
 
 import org.springframework.data.repository.CrudRepository;
 
-import pl.miknow.tacos.Order;
+import pl.miknow.tacos.Model.Order;
 
 public interface OrderRepository extends CrudRepository<Order, Long> {
 	List<Order> findByDeliveryZip(String deliveryZip);

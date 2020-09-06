@@ -1,4 +1,4 @@
-package pl.miknow.tacos;
+package pl.miknow.tacos.Model;
 
 import java.io.Serializable;
 import java.util.ArrayList;

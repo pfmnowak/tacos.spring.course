@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 
-import pl.miknow.tacos.Ingredient;
+import pl.miknow.tacos.Model.Ingredient;
 import pl.miknow.tacos.data.IngredientRepository;
 
 @Component

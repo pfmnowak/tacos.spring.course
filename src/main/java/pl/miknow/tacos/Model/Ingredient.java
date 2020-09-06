@@ -1,4 +1,4 @@
-package pl.miknow.tacos;
+package pl.miknow.tacos.Model;
 
 import javax.persistence.Entity;
 import javax.persistence.EnumType;

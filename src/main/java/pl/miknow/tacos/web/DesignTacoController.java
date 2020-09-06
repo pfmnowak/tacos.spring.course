@@ -16,10 +16,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
-import pl.miknow.tacos.Ingredient;
-import pl.miknow.tacos.Ingredient.Type;
-import pl.miknow.tacos.Order;
-import pl.miknow.tacos.Taco;
+import pl.miknow.tacos.Model.Ingredient;
+import pl.miknow.tacos.Model.Ingredient.Type;
+import pl.miknow.tacos.Model.Order;
+import pl.miknow.tacos.Model.Taco;
 import pl.miknow.tacos.data.IngredientRepository;
 import pl.miknow.tacos.data.TacoRepository;
 

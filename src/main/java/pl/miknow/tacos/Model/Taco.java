@@ -1,4 +1,4 @@
-package pl.miknow.tacos;
+package pl.miknow.tacos.Model;
 
 import java.util.ArrayList;
 import java.util.Date;
