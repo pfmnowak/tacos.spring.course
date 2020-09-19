@@ -11,7 +11,12 @@
 				<header>
 					<h1>Witaj w...</h1>
 					<a href="design"><img th:src="@{/images/TacoCloud.png}"/></a>
+					<a href="register"><h2>Rejestracja</h2></a>
+					<a href="login"><h2>Logowanie</h2></a>
 				</header>
+				<form method="POST" th:action="@{/logout}">
+					<input type="submit" value="Wyloguj">
+				</form>
 			</div>
 		</article>
 	</main>

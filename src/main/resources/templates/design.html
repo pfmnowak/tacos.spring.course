@@ -13,6 +13,9 @@ xmlns:th="http://www.thymeleaf.org">
 					<h1>Przygotuj własne taco!</h1>
 					<a href="/"><img th:src="@{/images/TacoCloud.png}"/></a>
 				</header>
+				<form method="POST" th:action="@{/logout}">
+					<input type="submit" value="Wyloguj">
+				</form>
 				<article>
 					<form method="POST" th:object="${design}">
 						<span class="validationError" th:if="${#fields.hasErrors('ingredients')}" th:errors="*{ingredients}">Ingredient Error</span>
